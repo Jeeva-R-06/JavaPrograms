@@ -8,10 +8,13 @@ public class SumOfNnumbers {
         int n,i,sum=0;
         System.out.println("Enter the N value: ");
         n = scanner.nextInt();
-
-        for(i=1;i<=n;i++){
-            sum+=i;
+        if(n<=0){
+            System.out.println("Invalid Number");
+        } else {
+            for (i = 1; i <= n; i++) {
+                sum += i;
+            }
+            System.out.println("Sum of first " + n + " natural numbers: " + sum);
         }
-        System.out.println("Sum of first "+n+"natural numbers: "+sum);
     }
 }

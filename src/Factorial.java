@@ -9,9 +9,14 @@ public class Factorial {
         System.out.println("Enter the number factorial which number you want: ");
         N = scanner.nextInt();
 
-        for(i=N;i>1;i--){
-            fact*=i;
+        if(N<0){
+            System.out.println("Invalid Number.");
         }
-        System.out.println("Factorial of "+N+" is: "+fact);
+        else {
+            for (i = N; i > 1; i--) {
+                fact *= i;
+            }
+            System.out.println("Factorial of " + N + " is: " + fact);
+        }
     }
 }

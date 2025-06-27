@@ -9,6 +9,7 @@ public class MultiplicationTable {
         System.out.println("Enter the Table Number that you want: ");
         N = scanner.nextInt();
 
+        System.out.println("Multiplication table of "+N+" is: ");
         for(i=1;i<=20;i++){
             System.out.println(N+" * "+i+" = "+(N*i));
         }
