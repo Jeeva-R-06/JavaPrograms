@@ -9,7 +9,7 @@ public class CheckPrimeNumber {
         System.out.println("Enter the Number: ");
         N = scanner.nextInt();
 
-        for(i=2;i<N;i++){
+        for(i=2;i<N/2;i++){
             if(N%i==0)
                 isPrime=1;
 
